@@ -1,0 +1,17 @@
+var students = [
+    {name: "Siddharth Abhimanyu", age: 21}, { name: "Malar", age: 25},
+    {name: "Maas",age: 18},{name: "Deva",age: 19},
+    {name: "Bali",age: 16},{name: "Chandu",age: 23},   {name:"Gabbar Singh",age: 33},{name: "Mogambo",age: 53},
+    {name: "Munna",age: 40},{name: "Khan",age: 20},
+    {name: "Manish Pandey",age: 19},{name: "Tony",age: 28},
+    {name: "Pari",age: 56} 
+    ];
+   function returnMinors(arr)
+   {
+     let list = [];
+     for (let i=0;i<arr.length;i++)
+       if (arr[i].age < 20)
+         list.push(arr[i].name);
+     return list;
+   }
+   console.log(returnMinors(students));
